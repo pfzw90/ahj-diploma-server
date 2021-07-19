@@ -15,7 +15,7 @@ const jReader = require('./jsonReader');
 
 const pub = path.join(__dirname, '/public');
 const app = new Koa();
-const port = 7070;
+const port = process.env.PORT || 7070;
 
 let notes;
 
